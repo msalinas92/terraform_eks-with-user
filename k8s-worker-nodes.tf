@@ -1,8 +1,3 @@
-#
-# EKS Worker Nodes Resources
-#  * IAM role allowing Kubernetes actions to access other AWS services
-#  * EKS Node Group to launch worker nodes
-#
 
 resource "aws_iam_role" "k8s-node" {
   name = "terraform-eks-k8s-node"
