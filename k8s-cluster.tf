@@ -39,10 +39,6 @@ resource "aws_security_group" "k8s-cluster" {
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
-
-  tags = {
-    Name = "terraform-eks-demo"
-  }
 }
 
 resource "aws_security_group_rule" "k8s-cluster-ingress-workstation-https" {
